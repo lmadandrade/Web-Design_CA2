@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* logo and navbar */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 20px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_left, .nav_right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 40px; /* Spacing around the logo */
+}
+
+.img_logo {
+    width: 200px;
+    height: auto;
+}
+
+.nav-link {
+    color: #5a5a5a; /* Slightly darker gray for links */
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px; /* Spacing between nav items */
+    padding: 10px 15px; /* Padding for larger clickable area */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    background-color: #ad0707; /* Background color on hover */
+    color: #fff; /* White text on hover */
+}
+
+
+/* Video */
+.video-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.gif-video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: inline-block;
+}
+
+.img_page1 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Process Steps Section */
+.caption_page1 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ad0707;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer button {
+    background-color: #fff;
+    color: #ad0707;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer button:hover {
+    background-color: #333;
+    color: #fff;
+}
