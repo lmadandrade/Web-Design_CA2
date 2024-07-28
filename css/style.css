@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-image: url(/images/backgroundimageAllPages.jpg);
 }
 
 /* Header and Navbar Styles */
@@ -63,6 +64,18 @@ header {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* Fade-in effect for photos */
+.photo {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+ 
+.photo.loaded {
+    opacity: 1;
+}
+ 
+
 
 /* Photo and Text Section */
 .text_section {
