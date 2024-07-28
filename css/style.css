@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,7 +6,7 @@ body {
     color: #333;
 }
 
-/* logo and navbar */
+/* Header and Navbar Styles */
 header {
     background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
     border-bottom: 2px solid #e0e0e0;
@@ -49,7 +50,6 @@ header {
     color: #fff; /* White text on hover */
 }
 
-
 /* Video */
 .video-container {
     text-align: center;
@@ -63,11 +63,21 @@ header {
     display: inline-block;
 }
 
-.img_page1 {
+.img_page1, .photo {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* Fade-in effect for photos */
+.photo {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.photo.loaded {
+    opacity: 1;
 }
 
 /* Process Steps Section */
@@ -81,6 +91,24 @@ header {
 
 .container {
     text-align: center;
+}
+
+/* Section Styles */
+.intro, .experience, .creative, .technics {
+    padding: 40px 0;
+}
+
+.bg-dark {
+    background-color: #333;
+}
+
+.text-light {
+    color: #fff;
+}
+
+ul.list-unstyled {
+    padding: 0;
+    list-style-type: none;
 }
 
 /* Footer Styles */
