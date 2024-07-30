@@ -38,20 +38,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 experience-details">
-                    <div>
+                <div class="col-md-6 lucastext">
+                    <div class="text-background">
                         <h3>Lucas Andrade</h3>
                         <p>Lucas Andrade is an accomplished video editor with over 10 years of experience in the industry. Proficient in Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve, Lucas brings a keen eye for detail and a creative flair to every project. His expertise extends across various aspects of video production, including color grading, motion graphics, and sound design. Over the years, Lucas has covered numerous high-profile events, such as international film festivals, music award shows, and corporate launches. His exceptional work has been recognized with several awards, including the prestigious Telly Award for Best Editing and the Golden Reel Award for Excellence in Sound Editing. Lucas’s dedication to his craft and his ability to tell compelling visual stories make him a standout professional in the field of video editing.</p>
                     </div>
                 </div>
             </div>
             
-            <hr> 
-            <hr><!-- Horizontal rule added here -->
+            <hr> <!-- Horizontal rule added here -->
             
             <div class="row mt-4">
-                <div class="col-md-6 experience-details">
-                    <div>
+                <div class="col-md-6 lucastext">
+                    <div class="text-background">
                         <h3>Lucas Guimaraes</h3>
                         <p>Lucas Guimaraes is a seasoned photo editor with more than 8 years of experience, specializing in Adobe Photoshop. Known for his meticulous attention to detail and artistic vision, Lucas excels in photo retouching, compositing, and color correction. Lucas has lent his expertise to a variety of important events, including fashion shows, celebrity photoshoots, and advertising campaigns. His talent has not gone unnoticed, earning him several accolades, such as the Adobe Design Achievement Award and the International Photography Award for Best Photo Editing. With a deep understanding of Photoshop’s extensive toolset and a passion for enhancing visual aesthetics, Lucas Guimaraes consistently delivers stunning, high-quality images that captivate audiences and elevate the projects he works on.</p>
                     </div>
@@ -68,10 +67,19 @@
         </div>
     </main>
 
-    <!-- Footer section with contact button -->
-    <footer class="text-center footer">
-        <button class="btn btn-primary">CONTACT US</button>
+    <footer>
+        <button>CONTACT US</button>
     </footer>
+
+    <script>
+        // JavaScript to add 'loaded' class for fade-in effect
+        document.addEventListener("DOMContentLoaded", function() {
+            var photos = document.querySelectorAll('.photo');
+            photos.forEach(function(photo) {
+                photo.classList.add('loaded');
+            });
+        });
+    </script>
 
 </body>
 </html>
