@@ -92,20 +92,49 @@
         </section>
     </main>
  
-    <!-- Footer section with contact button -->
-    <footer>
-        <button>CONTACT US</button>
-    </footer>
- 
-    <script>
-        // JavaScript to add 'loaded' class for fade-in effect
-        document.addEventListener("DOMContentLoaded", function() {
-            var photos = document.querySelectorAll('.photo');
-            photos.forEach(function(photo) {
-                photo.classList.add('loaded');
-            });
-        });
-    </script>
+      
+<!-- Footer section with contact button -->
+<footer>
+    <button id="contactBtn">CONTACT US</button>
+</footer>
+
+<!-- Contact Form PopUp -->
+<div id="contactPopUp" class="form" style="display: none;">
+    <div class="formContent">
+        <span class="span_form" id="spanForm">&times;</span>
+        <form id="contactForm">
+            <h2>Contact Us</h2>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="reason">Reason for Contacting</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Select a reason</option>
+                    <option value="service">Photo Editor query</option>
+                    <option value="support">Video Editor query</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+ <script src="js/script.js" defer></script> 
  
 </body>
 </html>
