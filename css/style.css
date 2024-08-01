@@ -40,7 +40,7 @@ header {
 }
 
 .img_logo {
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
@@ -124,7 +124,8 @@ header {
     background-color: #333;
 }
 
-.text-light {
+/* add a white thext for the black lines */
+.white-text {
     color: #fff;
 }
 
@@ -178,22 +179,13 @@ footer button:hover {
     max-width: 400px;
 }
 
-
-
-.img_logo {
-    width: 100px; 
-}
-
 .text-background {
     background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
 }
 
-.col-md-6{
-    padding-bottom: 15px;
-    
-}
+
 
 /* Contact Form Modal Styles */
 .form {
@@ -237,20 +229,6 @@ label {
     color: #555;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select {
-    width: 80%;
-    padding: 10px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-
 button[type="submit"] {
     background-color: #ad0707;
     color: white;
@@ -265,4 +243,19 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #800505;
+}
+
+.photo-container .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    font-size: 1.2em;
+    width: 51%;
 }
